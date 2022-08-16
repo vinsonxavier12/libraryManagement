@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/library-banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  nav{
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navbar-links{
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .navbar-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .navbar-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #6759ff;
+    margin: auto;
+    display: block;
+    transition: 0.25s;
+  }
+
+  .navbar-links ul li:hover::after{
+    width: 100%;
+  }
+
+  .text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-box h1{
+    font-size: 60px;
+  }
+
+  .text-box p{
+    width: 75%;
+    margin: auto;
+  }
+
+  .hero-btn{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-btn:hover{
+    background: #6759ff;
+    border-color: #6759ff;
+    transition: 1s;
+  }

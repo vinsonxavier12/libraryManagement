@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinson's Library</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="lib-style.css" />
+  </head>
+  <body>
+    <h1 class="library-heading">Vinson's Library</h1>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('crime')">
+          Crime
+        </button>
+        <button class="button-value" onclick="filterProduct('children-fiction')">
+          Children's Fiction
+        </button>
+        <button class="button-value" onclick="filterProduct('romance')">
+          Romance
+        </button>
+        <button class="button-value" onclick="filterProduct('young-adult-fiction')">
+          Young Adult Fiction
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
